@@ -3,25 +3,25 @@
 
 Summary: ghostwriter: A cross-platform, aesthetic, distraction-free Markdown editor
 Name: ghostwriter
-Version: 1.4.2
+Version: 1.5.0
 Release: 1%{?dist}
 License: GPLv3+
 Group: Development/Tools
 URL: http://wereturtle.github.io/ghostwriter/
 Source0: https://github.com/wereturtle/ghostwriter/archive/v%{version}.tar.gz
 BuildRequires: gcc gcc-c++ make
-BuildRequires: qt5-devel qt5-qtbase-devel qt5-qtsvg-devel qt5-qtwebkit-devel 
+BuildRequires: qt5-devel qt5-qtbase-devel qt5-qtsvg-devel qt5-qtwebkit-devel
 BuildRequires: qt5-qtmultimedia-devel hunspell-devel pkgconfig
 Requires: qt5-qtbase qt5-qtwebkit qt5-qtsvg qt5-qtmultimedia hunspell
 
 %description
-ghostwriter is a Windows and Linux text editor for Markdown, which is a plain 
-text markup format created by John Gruber. For more information about Markdown, 
-please visit John Gruber’s website at http://www.daringfireball.net. 
+ghostwriter is a Windows and Linux text editor for Markdown, which is a plain
+text markup format created by John Gruber. For more information about Markdown,
+please visit John Gruber’s website at http://www.daringfireball.net.
 
-ghostwriter provides a relaxing, distraction-free writing environment, whether 
-your masterpiece be that next blog post, your school paper, or your NaNoWriMo 
-novel. 
+ghostwriter provides a relaxing, distraction-free writing environment, whether
+your masterpiece be that next blog post, your school paper, or your NaNoWriMo
+novel.
 
 %prep
 %autosetup
@@ -45,6 +45,8 @@ make install
 %doc COPYING CREDITS.md
 
 %changelog
+* Wed Feb 28 2018 Machiel Molenaar <machiel@machiel.me> - 1.5.0-1
+- Update to v1.5.0
+
 * Thu Dec 15 2016 Arun Babu Neelicattu <arun.neelicattu@gmail.com> - 1.4.2-1
 - Initial version v1.4.2
-
